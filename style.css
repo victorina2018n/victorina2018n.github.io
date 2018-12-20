@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'BKANT';
+    src: url('fonts/BKANT.eot');
+    src: url('fonts/BKANT.eot') format('embedded-opentype'),
+         url('fonts/BKANT.woff2') format('woff2'),
+         url('fonts/BKANT.woff') format('woff'),
+         url('fonts/BKANT.ttf') format('truetype'),
+         url('fonts/BKANT.svg#BKANT') format('svg');
+}
+*{
+	margin: 0 auto;
+	padding: 0;
+	outline: none;
+}
+input, textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+body, html {
+	height: 100%;
+	background: #e9e9e9;
+}
+h1 {
+	color: #f00;
+	font-family: BKANT;
+	font-size: 50px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+h2 {
+	color: #06476f;
+	font-family: BKANT;
+	font-size: 32px;
+	padding-bottom: 40px;
+	max-width: 90%;
+}
+.content {
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+.center {
+	vertical-align: middle;
+	height: 100%;
+	display: table-cell;
+	text-align: center;
+}
+.center img {
+	width: 90%;
+	max-width: 300px;
+	margin-bottom: 10px;
+}
+#quest-0 img {
+	width: calc(100% - 20px);
+	padding: 10px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	max-width: 600px;
+}
+.variant a {
+	display: inline-block;
+	padding: 18px 29px;
+	background: #d5d5d5;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-radius: 5px;
+	color:#06476f;
+	text-decoration: none;
+	font-family: BKANT;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+.variant a span {
+	background: #fff9f9;
+	padding: 10px 15px;
+	border-radius: 5px;
+	margin-left: -19px;
+	margin-right: 10px;
+	box-shadow:  1px 2px 9px #464343;
+}
+.variant a:hover {
+	background: #06476f;
+	color:#fff;
+}
+.variant a:hover span {
+	color:#06476f;
+	box-shadow:none;
+}
+.pages {
+	margin-top: 20px;
+	padding-top: 28px;
+	border-top: 1px solid #ccc;
+	max-width: 400px;
+	padding-bottom: 10px;
+}
+.pages a {
+	display: inline-block;
+	padding: 18px 29px;
+	background: #06476f;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-radius: 5px;
+	color:#ffffff;
+	text-decoration: none;
+	font-family: BKANT;
+	font-size: 18px;
+}
+.pages a:first-child {
+	background: #839dad;
+	display:none;
+}
+.pages a.start {
+	display:block;
+}
+a.true, a.true:hover {
+	background: #00970b;
+	color:#fff;
+}
+a.true span, a.true:hover span {
+	color:#00970b;
+}
+a.false, a.false:hover {
+	background: #F44336;
+	color:#fff;
+}
+a.false span,a.false:hover span {
+	color:#F44336;
+}
+.quest {
+	display: none;
+}
+.quest#quest-0 {
+	display: block;
+}
+a.next {
+	display: none;
+}
+@media (max-width: 500px) {
+	h1 {
+		font-size:30px;
+	}
+}
